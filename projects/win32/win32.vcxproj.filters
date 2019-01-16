@@ -1,22 +1,55 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\Engine">
+      <UniqueIdentifier>{287de1da-196f-484a-a333-19acac01f59b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Engine\Graphics">
+      <UniqueIdentifier>{9cd4afb0-b086-48c6-b516-1ff3170ba0ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Game">
+      <UniqueIdentifier>{e3ceee89-4edb-4c53-bce2-1d3562cd7ce9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Engine\Platfroms">
+      <UniqueIdentifier>{6e8aa76c-bdad-411f-bc59-654695ddea53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Engine\Platfroms\Win32">
+      <UniqueIdentifier>{5ab137b3-4259-4437-9278-f45badfe0cbf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\source\win32\main.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\source\VideoDriverDirectX.cpp">
+      <Filter>Resource Files\Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Application.cpp">
+      <Filter>Resource Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Win32.cpp">
+      <Filter>Resource Files\Engine\Platfroms\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\AppDelegate.cpp">
+      <Filter>Resource Files\Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\VideoDriverDirectX.h">
+      <Filter>Resource Files\Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Application.h">
+      <Filter>Resource Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Win32.h">
+      <Filter>Resource Files\Engine\Platfroms\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\AppDelegate.h">
+      <Filter>Resource Files\Game</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

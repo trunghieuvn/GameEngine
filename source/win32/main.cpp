@@ -46,7 +46,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
 	// Game-Init
 
-	// Enter the main GAMELOOP:
+	// ::GAME RUNNING:: Enter the main GAMELOOP:
 	MSG msg;
 
 	while (TRUE)
@@ -65,7 +65,6 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	}
 
 	// Release pointer, Clean Up 
-
 
 	return msg.wParam;
 }

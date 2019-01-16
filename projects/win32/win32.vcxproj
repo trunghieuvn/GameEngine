@@ -18,6 +18,19 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\AppDelegate.cpp" />
+    <ClCompile Include="..\..\source\Application.cpp" />
+    <ClCompile Include="..\..\source\VideoDriverDirectX.cpp" />
+    <ClCompile Include="..\..\source\Win32.cpp" />
+    <ClCompile Include="..\..\source\win32\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\AppDelegate.h" />
+    <ClInclude Include="..\..\source\Application.h" />
+    <ClInclude Include="..\..\source\VideoDriverDirectX.h" />
+    <ClInclude Include="..\..\source\Win32.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{0BBE48D1-B9D7-4ABB-B247-C59E2B024CCC}</ProjectGuid>
@@ -125,9 +138,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\source\win32\main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
